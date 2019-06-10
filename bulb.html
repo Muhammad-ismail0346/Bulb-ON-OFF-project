@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<head>
+<link rel="stylesheet" type="text/css" href="bulb.css">
+<script src="bulb.js" ></script>
+	<html>
+	</head>
+<body>
+<h1 align="center">Here is My Bulb ON/OFF project</h1>
+<script >
+	function light(value)
+	{
+		var pic;
+		if(value == 0) 
+		{
+			pic="ON.png";
+		}
+		else
+		{
+			pic="OFF.png";
+		}
+		document.getElementById('bulb.html').src=pic;
+	}
+</script>
+<center><img id="bulb.html" src="OFF.png"></center>
+<br>
+	<center><button onclick="light(1)" >Turn ON</button>
+	<button onclick="light(0)" >Turn OFF</button></center>
+</body>
+</html>
